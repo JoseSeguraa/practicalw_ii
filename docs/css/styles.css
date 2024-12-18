@@ -3,8 +3,13 @@
 }
 
 .head-menu{
-   height: 100px;
-   background-color: rgb(17, 201, 140); 
+   height: 50px;
+   text-align: center;
+   background-color: rgb(17, 29, 201); 
+}
+
+.menu-text{
+    color: white;
 }
 
 .menu .sidebar .profile{
