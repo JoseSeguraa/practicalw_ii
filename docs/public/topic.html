@@ -38,6 +38,214 @@
                     </a>
                 </div>
             </div>
+            <div class="topic-container">
+                <div class="about-text">DEEPFAKE DETECTION</div>
+                <img src="../images/deepfake_cover.webp">
+                <ol>
+                    <li>INTRODUCTION</li>
+                    <p>According to Cambridge Dictionary, “deepfake” is “a video or sound recording that replaces
+                        someone's face or voice with that of someone else, in a way that appears real”, however, this is
+                        merely the surface of the topic. In this document we pretend to explain the evolution of this
+                        technology and how it became so controversial in our society, as well as explaining all that
+                        surrounds this matter.</p>
+                    <p>The word “deepfake “ comes from the combination of “deep learning” and “fake”, and it was first
+                        referred to around the years 2017-2018 by some reddit users; according to IBM deep learning is
+                        “a subset of machine learning that uses multilayered neural networks, called deep neural
+                        networks, to simulate the complex decision-making power of the human brain.” In simple words,
+                        deep learning allows a computer to learn from different experiences or inputs to which it is
+                        exposed to, simulating how we humans can learn through experiences we live.; On the other
+                        hand, we have the word “fake” which means false or not true. In the case of the machine, the
+                        experiences to which it is exposed are called data sets, that in this case, consist of multimedia
+                        in all of its forms, audio, photos, and videos. The deep learning software analyses essential
+                        components of this information and is capable of creating a very realistic imitation of an audio,
+                        photo or even a video from scratch, that can later be used for different purposes.</p>
+                    <p>Initially the learning type of software was developed as a security measure, seeing its
+                        application on cameras that analyzed the frames and could detect whether a movement was a
+                        person, an animal or just an object for example. Another application was the face id feature
+                        which was being introduced on the cellphones, whose job was to analyze and learn the specific
+                        features of its user. However, as often happens with technological advancements, people found
+                        new areas to which this could be applied, such as entertainment, propaganda or even
+                        misinformation (deepfake).</p>
+                    <p>Deepfake was popularized as the production of generated pornographic content on the internet,
+                        which consisted in using the bodies or faces of famous people to displace different types of
+                        media. Since then, the bad usage of this technology has swarmed the web, creating new
+                        techniques making it more realistic, fomenting hate and harassment via blackmail and political
+                        discord. This wave of misuse of the technology has raised a concern on various governments
+                        and associations, forcing them to develop technologies able to detect and deal with deep fake.
+                        This and more cases make this topic very controversial and important for our society.</p>
+                    <li>TECHNOLOGIES INVOLVED</li>
+                    <p> A huge number of approaches have been tested to try to automatically detect
+                        deepfakes; eyebrow change, eyeblink, eye movement, consistency in the eye’s
+                        reflection of ambient lighting, among others. Other techniques use artifacts (similar to
+                        our fingerprints but in a digital context) which are an indicator of the use of deepfake
+                        tools. Now, we provide an extensive explanation of the tools available to fight
+                        deepfakes.</p>
+                    <p> These technologies can be divided into two types: Detection technologies and
+                        Authentication technologies.
+                        The first, intend to assess whether the analyzed media is a fake or not without having to
+                        compare it with the original one. Generally, these technologies are powered by Machine
+                        Learning, specifically a subgroup of this artificial intelligence field called Deep Learning
+                        (DL). DL algorithms, specifically CNNs (Convolutional Neural Networks), are especially
+                        effective in extracting features from visual data, which is greatly useful in image
+                        classification, object detection and segmentation. What deep learning has offered is that
+                        it has the ability to identify by itself the different patterns and features, in opposition to
+                        traditional machine learning techniques which required this process to be done
+                        manually. Therefore, applications such as facial recognition, emotion analysis, and
+                        object detection in videos and images are now possible.</p>
+                    <p> For example, the University of California proposed a two-step method which divided the
+                        detection task with a deep neural network: Firstly, an assessment of facial expressions
+                        through which information about every part involved in them was obtained (mouth, eyes,
+                        etc.). Then, the encoder-decoder architecture detects potential manipulation by
+                        comparing the data obtained with its database. This method is called EMD (Expression
+                        Manipulation Detection) and was able to detect 99% of the deepfakes.</p>
+                    <p> Moreover, we can find some public available deepfake detectors:</p>
+                    <ul>
+                        <li>FakeCatcher: Introduced by Intel, its algorithm focuses on videos. Through the
+                        analysis of subtle blood flow, this tool tells the authenticity of media. Our
+                        heartbeat slightly changes the color of our veins, therefore FakeCatcher
+                        gathers these signs of blood flow and then analyzes if the color variation is
+                        normal or not.</li>
+                        <li>Sentinel AI: Its algorithm can find the diffusion technology which AI generators
+                        (like DALL-E or FaceSwap) use. Moreover, it can also find deepfakes created
+                        by Large Language Models such as ChatGPT.</li>
+                        <li>DeepWare AI: A Deep Learning algorithm which is trained with authorized
+                        YouTube, 4Chan and Celeb-DF videos. Consequently, it is constantly aware
+                        of the new online trends and recent deepfake techniques creation.</li>
+                        <li>Video Authenticator Tool: Created by Microsoft, it analyzes subtle changes in
+                        the media’s grayscale component, providing instant feedback by a confidence
+                        score.</li>
+                    </ul>
+                    <p> In opposition, the authentication technologies introduce watermarks during the creation
+                        of a specific piece of media. Therefore, the presence or absence of it is a key finding to
+                        tell whether something is a deepfake or not. Some of them add pixel or audio patterns
+                        which cannot be detected by humans but are perfectly perceptible to a computer.
+                        Whenever a part of the media is altered, the patterns disappear proving that it was
+                        manipulated. Some of them just make the video or audio sound unrealistic.</p>
+                    <p> Metadata is one of the most powerful tools when it comes to facilitate deepfake
+                        detection, as it can be embedded so it is cryptographically secure making the lack of it
+                        (completely or partly) an irrefutable proof of an alteration.
+                        These techniques are strengthened by blockchain, as media and metadata can be
+                        uploaded to public blockchains, therefore making obvious any kind of manipulation
+                        whenever the deepfake version and the original one are compared.</p>
+                <li> STRENGHTS AND WEAKNESSES</li>
+                        <ul>
+                            <li> Strengths:
+                            One of the main strengths is accuracy due to advanced AI algorithms, which
+                            makes the Deepfake detection software extremely efficient. According to
+                            Konstantin Simonchik in his article (2/21/2024 Deepfake Detection: Accuracy of
+                            Commercial Tools) we can see that the accuracy percentage varies from 87% to
+                            99.7%, depending on the software used. The study was based on tools available
+                            on the internet. Moreover, Deepfake detection technologies have the ability to
+                            detect fakes in real time and in an immediate way.</li>
+                            <li>Weaknesses:
+                            Adaptability could be said to be one of the main weaknesses in deepfake
+                            detection, since deepfake technologies are constantly evolving and the softwares
+                            do not usually keep up to them. This idea is reinforced by its dependance on
+                            training with data, which sometimes is rendered obsolete.
+                            Furthermore, the computational cost that some detection methods require is
+                            extremely high, making them impractical. Another weakness is that, for the most
+                            part, the best detection softwares are either not available for public use or behind
+                            a large paywall.</li>
+                        </ul>
+                <li>TECHNOLOGY’S VIABILITY, USAGE AND POTENTIAL EVOLUTION</li>
+                <ul>
+                    <li>Viability:
+                    The current overview to this technology, is that it generally works, but it still has to
+                    overcome the difficulties aforementioned. Is deepfake detection a viable project?
+                    The prospects are good. With AI becoming increasingly more efficient, deepfake
+                    detection tools have experienced a boost in its adaptability. Moreover, the
+                    knowledge about tools created to avoid these controls is expanding, therefore
+                    preparing deepfake detection technologies to combat them. Even though we can
+                    not confidently state that we will be prepared for whatever comes, in general
+                    terms deepfake detection tools seem to be perfectly competent to face the
+                    problems they still have to solve.</li>
+                <li>Usage:
+                Deepfake detection technology is currently being used by many organisations:
+                <ul>
+                <li>Social media apps are starting to use this technology to automatically
+                detect deepfakes in their apps, excepting X (known as Twitter). In this
+                case, to notify deepfakes they employ “community notes”, where people
+                can report that something is a deepfake using proofs and if it’s verified, it
+                will be shown for all the people that see that post.</li>
+                <li> and universities: The teachers are starting to use this technology
+                to detect content made by an AI in the tasks made by their students, as a
+                response to the increase in recent years in the usage of tools such as
+                ChatGPT.</li>
+                <li>Police and judges: There have been some cases in which people have
+                created fake proofs using AI to accuse someone of having, for example,
+                stolen something. Therefore, and in order to preserve justice, courtrooms
+                now rely on deepfake detection to avoid these situations.</li></ul></li>
+                <li>Potential evolution:
+                This technology has a big potential, as it will surely improve its efficiency and
+                become a widely used tool, to the point where we can implement it to
+                automatically detect every kind of deepfake we come across in the internet,
+                something which with the passage of time will become increasingly common.
+                In particular, this could be implemented through our smartphone cameras, giving
+                them the ability to tell whether something is a deepfake or not just by focusing on
+                it. This would not be a complement, but a preinstalled app which would come
+                with the mobile phone.</li>
+                </ul>
+                <li>ETHICS BEHIND DEEPFAKE DETECTION</li>
+                    <p>Ethics surrounding deepfake detection is a very tricky topic due to the fact that it is
+                    intended as a great tool created for pointing out synthetic media from original and
+                    authentic content in order to eliminate the dangers created by fake videos or images.
+                    However, a very big issue has arisen with the development of these technologies when
+                    taking into consideration how, when and by whom these tools will be used. Some of the
+                    key issues that must be taken into close consideration may be:</p>
+                    <ul>
+                        <li>Privacy Concerns:
+                        <ul>
+                            <li>Surveillance Risks: In order to put in place deepfake detection systems,
+                    there must be lots of monitoring of large amounts of media, which may
+                    develop in privacy concerns, given the fact that this surveillance may
+                    include unauthorized tracking.</li>
+                            <li>Data Usage: To allow detection systems to work correctly, these will have
+                    to store information about people’s faces, voices or actions. If this
+                    information is not stored correctly, it may turn out to be an ethical issue.
+                    Therefore, it is very important that all of this information is handled
+                    carefully and only stored for as long as necessary.</li></ul></li>
+                    <li>Accuracy (False Results): As every technology, detection systems are not
+                    perfect, which means that they can make mistakes, in which case they would be
+                    labeling real media as if it were fake. On the other hand, they could also mark
+                    fake content as real, which would be a very big issue as well. In both cases,
+                    ethical issues could arise like, for example, if someone’s reputation is damaged.</li>
+                    <li>Freedom of Speech:
+                        <ul>
+                        <li>Content Control: Like mentioned earlier, if a mistake was made, it could
+                    lead to real content being deleted, which means that this technology being
+                    used in an overly strict way could lead to limiting people’s freedom.</li>
+                    <li>Political Repression: Governments and big companies misusing
+                    detection technology to silence the public opinion is a very significant
+                    ethical issue surrounding these tools. This would be dangerous in places
+                    where people’s rights are limited, such as dictatorships.</li></ul></li>
+                    <li>Impact on trust: Knowing that deepfake technologies exist may impact people's
+                    trust in the media. Even with these deepfake detection technologies trust issues
+                    could spread among the population, which would make it very hard for people to
+                    believe anything they see or hear online. On another note, people should be able
+                    to decide if deepfake detection technologies can be used in the content created
+                    by them or not. Therefore there will have to be a differentiation between harmful
+                    deepfake and the one which is not, such as parodies or jokes. This once again
+                    brings up yet another ethical issue regarding the use of deepfake detection
+                    technologies.</li></ul>
+                <li>CONCLUSION</li>
+                        <p>In conclusion, it is important to remark that this new branch of technology poses both an
+                            opportunity and a challenge to all of society, from individuals to the system as a whole.
+                            On one hand, it has the ability to revolutionise most of the sectors that involve
+                            education, and entertainment, but on the other hand, its misuse can lead to a chain of
+                            events that will end up reflecting serious consequences in the future.
+                            For these reasons, it is essential that these technologies have robust and accurate
+                            detection technologies which must be continuously updated to keep pace with the
+                            evolving techniques used to create deepfakes. Last but not least, the ethical
+                            implications of deepfake technology cannot be overlooked, meaning that a balance
+                            between protecting individuals and society from harmful deepfakes and safeguarding
+                            freedom of expression will be crucial.
+                            Finally, for us as a group deepfake technology must require a very complete approach,
+                            which involves ethical guidelines, technological innovation, but most importantly,
+                            societal awareness. With this in mind, researchers, policymakers and society leaders
+                            can be on the same page to guide the usage of this technological advancement to an
+                            era where benefits result maximized and potential harms become minimized.</p>
+                </ol>
+            </div>
         <footer class="footer-section">
             <p>&copy; 2024 All Rights Reserved. Design by <a href="https://joseseguraa.github.io/practicalw_ii/docs/public/about.html">Jose Segura</a></p>
         </footer>
