@@ -29,10 +29,11 @@
 }
 
 .image-container {
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;;
 }
 
 .imagen-con-texto {
@@ -56,7 +57,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(10, 90, 165); /* Azul */
 }
+    
 
 .footer-section {
     width: 100%;
@@ -102,48 +105,91 @@ body {
     align-items: center;
 }
 
-.about-menu{
-    position: relative;
+.about-menu {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 50px 0;
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(10, 90, 165); 
-
+    justify-content: flex-start; /* Cambia a 'flex-start' si no necesitas centrar */
+    padding: 30px 0; /* Ajusta el padding total */
+    background-color: rgb(10, 90, 165);
+    width: 100%; 
+    height: 100vh;
 }
 
-.about-text{
-    position: absolute;
-    top: 5%; 
-    left: 50%;
-    transform: translateX(-50%); 
+.about-text {
+    margin-top: 20px; /* Añade un margen superior específico para el título */
+    margin-bottom: 30px;
     color: white;
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-    font-style: bold;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-.about-menu p{
-    color: white;
-    font-size: 20px;
+.circle-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 33%; 
+    margin: 20px 0; 
+    flex-wrap: wrap; 
+    width: 80%; 
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: gray;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin: 0 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add hover effect */
 }
 
-.icon {
-    width: 150px;
-    height: 150px; 
-    filter: sepia(1) saturate(8) hue-rotate(170deg); 
+.circle:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.icon img {
+    width: 75px;
+    height: 75px;
+    filter: sepia(1) saturate(8) hue-rotate(170deg); /* Adjust icon colors */
+}
+
+.square-container {
+    display: flex; 
+    justify-content: center;
+    gap: 250px; 
+    flex-wrap: wrap;
+    margin-top: 50px; 
+}
+
+.about-square {
+    background-color: rgb(37, 147, 250);
+    width: 400px;
+    height: 450px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Por si hay varios elementos */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+
+.about-square ul {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    list-style-type: none;
+    padding: 0 -10px;
+}
+
+.about-square li {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin: 50px 0;
 }
