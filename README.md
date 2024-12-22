@@ -5,3 +5,4 @@
 - Contact page done
 - Topic page done
 - Degree page donde
+- Network page almost finished
