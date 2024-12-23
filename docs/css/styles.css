@@ -115,7 +115,6 @@ body {
     align-items: center;
     justify-content: flex-start; 
     padding: 30px 0; 
-    background-color: rgb(10, 90, 165);
     width: 100%; 
     min-height: 80vh;
 }
@@ -175,10 +174,11 @@ body {
 
 .contact-square {
     background-color: rgb(37, 147, 250);
-    width: 450px;
+    width: 475px;
     height: 800px;
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding-right: 30px;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -502,6 +502,7 @@ ul li {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    height: auto;
 }
 
 .about-subcontainer p{
