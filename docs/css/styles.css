@@ -255,9 +255,35 @@ body {
     height: 700px;
 }
 
+.topic-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    width: 1500px; /* O usa un ancho mayor, como 1100px */
+    height: auto;
+    margin-bottom: 30px;
+    justify-content: space-between; /* Asegura espacio entre columnas */
+}
+
+.topic-column {
+    height: auto;
+    width: auto; 
+}
+
+.topic-column img {
+    width: 700px; 
+    height: auto; 
+    margin-left: 150px;
+}
+
+.topic-column p{
+    color: white;
+    
+}
+
 .topic-container > ol > li {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: underline;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -265,7 +291,7 @@ body {
 
 .topic-container p, ul {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .degree-container {
@@ -322,42 +348,55 @@ ul li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     color: white;
     text-align: justify;
+    margin-bottom: 80px;
 }
 
 .degreecv-column {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
 .column {
-    width: 45%; 
+    width: 90%; 
+    height: auto;
     background-color: rgb(10, 90, 165);
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin: 40px auto; 
-    padding: 20px
+    padding-right: 25px;
 }
 
 .column h3 {
     font-size: 25px;
     text-decoration: underline;
+    text-align: center;
+}
+
+.column p{
+    font-size: 35px;
+    padding: 20px;
 }
 
 .degreecv-container h1 {
     margin-top: 20px; 
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 80px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center
 }
 
 .degreecv-container h2 {
     margin-top: 20px; 
-    margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center
+    text-align: center;
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+
+.degreecv-container h2:hover {
+    transform: scale(1.1);
 }
 
 .net-container {
