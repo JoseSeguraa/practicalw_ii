@@ -478,24 +478,24 @@ ul li {
 .about-container {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Alinea verticalmente */
+    justify-content: center;
+    align-items: center; 
     text-align: center;
-    margin: 20px auto; /* Centra el contenedor */
-    width: 90%; /* Usa un ancho relativo */
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
-    height: auto; /* Se adapta al contenido */
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 1200px; 
+    height: auto; 
     border-radius: 10px;
-    gap: 20px; /* Espaciado entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos hagan una nueva línea si es necesario */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .about-image img {
-    width: 100%; /* Imagen responsiva */
-    max-width: 400px; /* Limita el ancho máximo */
-    height: auto; /* Mantiene las proporciones */
+    width: 100%; 
+    max-width: 350px; 
+    height: auto; 
     border-radius: 10px;
-    margin: 0 auto; /* Centra la imagen */
+    margin: 0 auto; 
 }
 
 .about-subcontainer {
@@ -504,23 +504,22 @@ ul li {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    width: 100%; /* Ancho relativo */
-    max-width: 600px; /* Limita el ancho */
-    height: auto; /* Se adapta al contenido */
-    box-sizing: border-box; /* Incluye el padding en las dimensiones */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    box-sizing: border-box;
 }
 
 .about-subcontainer p {
-    font-size: 1.2rem; /* Fuente adaptable */
-    line-height: 1.6; /* Mejora la legibilidad */
-    margin: 15px 0; /* Reduce el margen superior e inferior */
+    font-size: 30px;
+    margin: 15px 0; 
 }
 
 .about-subcontainer h1 {
-    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    font-size: 40px; 
     margin-bottom: 15px;
 }
 
