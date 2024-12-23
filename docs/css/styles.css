@@ -475,44 +475,53 @@ ul li {
     right: 0%;
 }
 
-.about-container{
+.about-container {
     display: flex;
     flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente */
     text-align: center;
-    margin: 10px;
-    margin-bottom: 40px;
-    width: 1500px;
-    height: auto;
+    margin: 20px auto; /* Centra el contenedor */
+    width: 90%; /* Usa un ancho relativo */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    height: auto; /* Se adapta al contenido */
     border-radius: 10px;
+    gap: 20px; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos hagan una nueva línea si es necesario */
 }
 
-.about-image img{
-    width: 400px;
-    height: 520px;
+.about-image img {
+    width: 100%; /* Imagen responsiva */
+    max-width: 400px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene las proporciones */
     border-radius: 10px;
-    margin-inline: 50px;
-    margin-bottom: 100px;
+    margin: 0 auto; /* Centra la imagen */
 }
 
-.about-subcontainer{
+.about-subcontainer {
     background-color: rgb(37, 147, 250);
     color: white;
     border-radius: 10px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    height: auto;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho relativo */
+    max-width: 600px; /* Limita el ancho */
+    height: auto; /* Se adapta al contenido */
+    box-sizing: border-box; /* Incluye el padding en las dimensiones */
 }
 
-.about-subcontainer p{
-    font-size: 35px;
-    margin: 25px;
+.about-subcontainer p {
+    font-size: 1.2rem; /* Fuente adaptable */
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 15px 0; /* Reduce el margen superior e inferior */
 }
 
-.about-subcontainer h1{
-    font-size: 45px;
-    margin: 25px;
+.about-subcontainer h1 {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 15px;
 }
 
 .cv-container{
