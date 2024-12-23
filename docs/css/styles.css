@@ -483,7 +483,7 @@ ul li {
     text-align: center;
     margin: 20px auto;
     width: 90%; 
-    max-width: 1500px; 
+    max-width: 1800px; 
     height: auto; 
     border-radius: 10px;
     gap: 20px; 
@@ -492,7 +492,7 @@ ul li {
 
 .about-image img {
     width: 100%; 
-    max-width: 350px; 
+    max-width: 400px; 
     height: auto; 
     border-radius: 10px;
     margin: 0 auto; 
